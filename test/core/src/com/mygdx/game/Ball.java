@@ -12,19 +12,23 @@ public class Ball extends Sprite
     private Vector2 vel;
     private Vector2 accel;
 
-    public Ball()
+    public Ball(float x, float y)
     {
         if (texture == null)
             new Texture("purple.png");
 
-        vel = new Vector2();
+        setX(x);
+        setY(y);
+        vel = new Vector2(30,20);
         accel = new Vector2();
-
     }
 
     public void update()
     {
         accel.add(0, World.GRAVITY);
+        vel.add(accel);
+        setX(getX() + vel.x);
+        setY(getY() + vel.y);
     }
 
     @Override

@@ -10,10 +10,14 @@ public class MyGdxGame extends ApplicationAdapter
 {
     public static SpriteBatch batch;
 
+    private World world;
+
     @Override
     public void create()
     {
         batch = new SpriteBatch();
+
+        world = new World();
     }
 
     @Override
@@ -23,6 +27,7 @@ public class MyGdxGame extends ApplicationAdapter
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         batch.begin();
+        world.update(batch);
         batch.end();
     }
 
