@@ -22,7 +22,7 @@ public class MyGdxGame extends ApplicationAdapter
     @Override
     public void render()
     {
-        Gdx.gl.glClearColor(1, 0, 0, 1);
+        Gdx.gl.glClearColor(0.5f, 0.5f, 0.5f, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         batch.begin();
