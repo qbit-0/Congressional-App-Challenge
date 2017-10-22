@@ -22,7 +22,7 @@ public class Salt extends Sprite
         if (pixmap == null && texture == null)
         {
             pixmap = new Pixmap(1, 1, Pixmap.Format.RGB888);
-            pixmap.setColor(1, 1, 1, 0.5f);
+            pixmap.setColor(1, 1, 1, 0.1f);
             pixmap.fill();
             texture = new Texture(pixmap);
         }
@@ -39,7 +39,7 @@ public class Salt extends Sprite
         accel.add(0, -SaltWorld.GRAVITY);
 
         Salt target = SaltWorld.salts.get(random(SaltWorld.salts.size() - 1));
-        accel.add((target.getX() - getX()) * 0.0001f, (target.getY() - getY()) * 0.0001f);
+        accel.add(Math.signum(target.getX() - getX()) * 0.01f, Math.signum(target.getY() - getY()) * 0.01f);
 
         accel.add(accel.x * -0.1f, accel.y * -0.1f);
         vel.add(accel);

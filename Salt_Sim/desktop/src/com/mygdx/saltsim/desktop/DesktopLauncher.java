@@ -10,8 +10,8 @@ public class DesktopLauncher
     {
         LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
         config.title = "Salt Simulator";
-        config.width = 800;
-        config.height = 600;
+        config.width = 1920;
+        config.height = 1080;
         config.resizable = false;
         config.vSyncEnabled = true;
         new LwjglApplication(new SaltSim(), config);
