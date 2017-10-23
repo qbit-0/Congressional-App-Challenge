@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DisplayMessageActivity"
+            android:parentActivityName=".MainActivity"></activity>
+
+        <meta-data
+            android:name="android.support.PARENT_ACTVITY"
+            android:value=".MainActivity" />
     </application>
 
 </manifest>
