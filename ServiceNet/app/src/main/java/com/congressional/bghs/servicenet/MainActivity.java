@@ -73,10 +73,6 @@ public class MainActivity extends AppCompatActivity
         {
             mDrawer.closeDrawer(GravityCompat.START);
         }
-        else
-        {
-            super.onBackPressed();
-        }
     }
 
     @Override

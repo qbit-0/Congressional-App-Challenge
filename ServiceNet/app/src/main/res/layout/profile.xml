@@ -32,8 +32,8 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="72"
-                android:layout_height="72"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -134,15 +134,15 @@
                 android:text="13892 YOCKEY ST\nGARDEN GROVE CA 92844-2662"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                 android:textColor="?android:attr/textColorPrimaryInverse"
-                app:layout_constraintBottom_toBottomOf="@+id/imageButton"
-                app:layout_constraintEnd_toStartOf="@+id/imageButton"
+                app:layout_constraintBottom_toBottomOf="@+id/i_btn_external_map"
+                app:layout_constraintEnd_toStartOf="@+id/i_btn_external_map"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_loc_section"/>
 
             <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="48"
-                android:layout_height="48"
+                android:id="@+id/i_btn_external_map"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginTop="8dp"
                 android:background="?android:attr/colorActivatedHighlight"
@@ -151,7 +151,7 @@
                 app:srcCompat="@android:drawable/ic_dialog_map"/>
 
             <com.google.android.gms.maps.MapView
-                android:id="@+id/mapView2"
+                android:id="@+id/map_loc"
                 android:layout_width="0dp"
                 android:layout_height="256dp"
                 android:layout_marginEnd="24dp"
