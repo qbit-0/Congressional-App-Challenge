@@ -53,6 +53,9 @@ public class ProfileFragment extends Fragment
         mLocContent = (ConstraintLayout) mLocSection.findViewById(R.id.loc_content);
         mLocExternalMap = (ImageButton) mLocContent.findViewById(R.id.i_btn_external_map);
 
+        mProfileFirstName.setText(Variables.firstName);
+        mProfileLastName.setText(Variables.lastName);
+
         mLocExternalMap.setOnClickListener(new View.OnClickListener()
         {
             @Override
