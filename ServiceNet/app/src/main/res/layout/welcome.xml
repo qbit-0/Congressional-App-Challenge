@@ -7,9 +7,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome Layout"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Welcome Screen"
         android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.Material.Display1"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"/>
 </RelativeLayout>
