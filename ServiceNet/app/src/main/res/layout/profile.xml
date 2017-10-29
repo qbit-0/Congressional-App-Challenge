@@ -10,6 +10,5 @@
         android:text="Profile Layout"
         android:textAppearance="@android:style/TextAppearance.Material.Display1"
         android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="74dp"/>
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
