@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <resources>
     <string name="app_name">ServiceNet</string>
     <string name="sign_in">Sign In</string>
@@ -5,9 +6,8 @@
     <string name="password_hint">Password</string>
     <string name="login_txt">Login</string>
     <string name="title_activity_search_provider">SearchProviderActivity</string>
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
+    <string name="title_activity_provider_search">ProviderSearchActivity</string>
 </resources>

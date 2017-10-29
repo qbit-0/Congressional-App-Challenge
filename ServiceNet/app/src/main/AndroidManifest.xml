@@ -9,20 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ProviderSearchActivity">
-        </activity>
         <activity
-            android:name=".SearchProviderActivity"
-            android:label="@string/title_activity_search_provider"
+            android:name=".ProviderSearchActivity"
+            android:label="@string/title_activity_provider_search"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>

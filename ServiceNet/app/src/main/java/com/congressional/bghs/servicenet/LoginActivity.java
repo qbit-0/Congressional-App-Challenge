@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
-public class MainActivity extends AppCompatActivity
+public class LoginActivity extends AppCompatActivity
 {
     final Context context = this;
 
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         mUsernameTextView = (EditText) findViewById(R.id.et_username);
         mLoginButton = (Button) findViewById(R.id.btn_login);
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity
                     @Override
                     public void run()
                     {
-                        Class destination = SearchProviderActivity.class;
+                        Class destination = ProviderSearchActivity.class;
                         Variables.username = mUsernameTextView.getText().toString();
                         Variables.emailAdress = Variables.username + "@gmail.com";
                         Variables.firstName = "Benedict";

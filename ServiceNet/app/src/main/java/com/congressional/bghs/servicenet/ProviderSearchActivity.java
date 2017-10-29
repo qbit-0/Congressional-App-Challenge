@@ -15,12 +15,12 @@ import android.view.MenuItem;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class SearchProviderActivity extends AppCompatActivity
+public class ProviderSearchActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
 {
 
     NavigationView mNavigationView;
-    ScrollView mHeaderScrollView;
+    View headerView;
     TextView mUsernameTextView;
     TextView mNameTextView;
     TextView mEmailAdressTextView;
@@ -29,7 +29,7 @@ public class SearchProviderActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search_provider);
+        setContentView(R.layout.activity_provider_search);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -42,15 +42,15 @@ public class SearchProviderActivity extends AppCompatActivity
         mNavigationView = (NavigationView) findViewById(R.id.nav_view);
         mNavigationView.setNavigationItemSelectedListener(this);
 
-        mHeaderScrollView = (ScrollView) mNavigationView.getHeaderView(0).findViewById(R.id.sv_header);
+        headerView = mNavigationView.getHeaderView(0);
 
-        mUsernameTextView = (TextView) mHeaderScrollView.findViewById(R.id.tv_username);
+        mUsernameTextView = (TextView) headerView.findViewById(R.id.tv_username);
         mUsernameTextView.setText(Variables.username);
 
-        mNameTextView = (TextView) mHeaderScrollView.findViewById(R.id.tv_name);
+        mNameTextView = (TextView) headerView.findViewById(R.id.tv_name);
         mNameTextView.setText(Variables.firstName + " " + Variables.lastName);
 
-        mEmailAdressTextView = (TextView) mHeaderScrollView.findViewById(R.id.tv_email_adress);
+        mEmailAdressTextView = (TextView) headerView.findViewById(R.id.tv_email_adress);
         mEmailAdressTextView.setText(Variables.emailAdress);
     }
 
@@ -72,7 +72,7 @@ public class SearchProviderActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu)
     {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.search, menu);
+        getMenuInflater().inflate(R.menu.provider_search, menu);
         return true;
     }
 
