@@ -1,6 +1,7 @@
 package com.congressional.bghs.servicenet;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -28,6 +29,7 @@ public class SearchFragment extends Fragment
     ScrollView mContentScrollView;
     LinearLayout mSearchContent;
     LinearLayout mSearchResults;
+    ConstraintLayout mClickableResult;
     ProgressBar mSearchProgressBar;
 
     @Nullable
@@ -42,6 +44,7 @@ public class SearchFragment extends Fragment
         mContentScrollView = (ScrollView) view.findViewById(R.id.sv_content);
         mSearchContent = (LinearLayout) mContentScrollView.findViewById(R.id.search_content);
         mSearchResults = (LinearLayout) mSearchContent.findViewById(R.id.search_results);
+        mClickableResult = (ConstraintLayout) mSearchResults.findViewById(R.id.search_result_clickable);
         mSearchProgressBar = (ProgressBar) mSearchContent.findViewById(R.id.search_progress_bar);
 
         mSearchButton.setOnClickListener(new View.OnClickListener()
@@ -60,7 +63,18 @@ public class SearchFragment extends Fragment
                         mSearchProgressBar.setVisibility(View.INVISIBLE);
                         mSearchResults.setVisibility(View.VISIBLE);
                     }
-                }, 1000);
+                }, 500);
+            }
+        });
+
+        mClickableResult.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Class destination = ProviderProfileActivity.class;
+                Intent intent = new Intent(view.getContext(), destination);
+                startActivity(intent);
             }
         });
 

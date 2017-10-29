@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity
                         Intent intent = new Intent(context, destination);
                         startActivity(intent);
                     }
-                }, 1000);
+                }, 500);
             }
         };
         mLoginButton.setOnClickListener(clickListener);

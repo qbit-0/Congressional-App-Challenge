@@ -64,7 +64,7 @@
                 android:visibility="invisible">
 
                 <android.support.constraint.ConstraintLayout
-                    android:id="@+id/seach_result_1"
+                    android:id="@+id/search_result_clickable"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="16dp"
@@ -120,11 +120,67 @@
 
                 </android.support.constraint.ConstraintLayout>
 
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/search_result_unclickable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:background="?attr/colorPrimary">
+
+                    <ImageView
+                        android:id="@+id/iv_group_profile_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/ic_launcher_round"/>
+
+                    <TextView
+                        android:id="@+id/tv_group_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Doctors of Garden Grove"
+                        android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_1"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_member_count_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="120 Members"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_1"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_group_name_1"/>
+
+                    <TextView
+                        android:id="@+id/tv_group_description_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Doctors of Garden Grove is an apointment-based health organization."
+                        android:textAlignment="textStart"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_member_count_1"/>
+
+                </android.support.constraint.ConstraintLayout>
+
             </LinearLayout>
 
             <ProgressBar
                 android:id="@+id/search_progress_bar"
-                style="?android:attr/progressBarStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="invisible"
