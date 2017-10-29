@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_servicesearch">
+            android:label="@string/title_activity_servicenet">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

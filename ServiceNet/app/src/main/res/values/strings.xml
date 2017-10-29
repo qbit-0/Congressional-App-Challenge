@@ -10,7 +10,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_provider_search">Search</string>
-    <string name="title_activity_servicesearch">ServiceSearch</string>
+    <string name="title_activity_servicenet">ServiceNet</string>
     <string name="nav_search_label">Provider Search</string>
     <string name="nav_service_label">Manage Services</string>
     <string name="nav_profile_label">Profile</string>

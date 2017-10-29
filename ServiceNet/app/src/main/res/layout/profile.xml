@@ -7,207 +7,460 @@
     android:layout_height="match_parent">
 
     <ScrollView
+        android:id="@+id/sv_profile"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.constraint.ConstraintLayout
+        <LinearLayout
+            android:id="@+id/ll_profile"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:layout_margin="32dp"
+            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_marginStart="32dp"
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/profile_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/actionModeSplitBackground"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/ic_launcher_round"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorAccent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_menu_edit"/>
+
+                <TextView
+                    android:id="@+id/tv_profile_first_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="FIRST NAME"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/profile_pic"
+                    app:layout_constraintTop_toTopOf="@+id/profile_pic"/>
+
+                <TextView
+                    android:id="@+id/tv_profile_last_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="LAST NAME"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/profile_pic"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_profile_first_name"/>
+
+                <RatingBar
+                    android:id="@+id/ratingBar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="44dp"
+                    android:rating="4"
+                    android:scaleX=".5"
+                    android:scaleY=".5"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true"
+                    app:layout_constraintStart_toStartOf="@+id/profile_pic"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="BIO: I'm just your friendly neighboorhood doctor / mechanic / barber."
+                    app:layout_constraintEnd_toEndOf="@+id/tv_profile_first_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_pic"/>
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/services_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@mipmap/ic_launcher_round"/>
+                android:background="?android:attr/actionModeSplitBackground"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_profile_name"
-                android:layout_width="0dp"
+                <TextView
+                    android:id="@+id/services_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorAccent"
+                    android:padding="4dp"
+                    android:text="Services Provided"
+                    android:textAppearance="@android:style/TextAppearance.Material.Title"
+                    android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                <LinearLayout
+                    android:id="@+id/services_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/service_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="Doctor"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                    <TextView
+                        android:id="@+id/service_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="Mechanic"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                    <TextView
+                        android:id="@+id/service_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="Barber"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/creds_section"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:padding="8dp"
-                android:text="Name"
-                android:textAppearance="@android:style/TextAppearance.Material.Display1"
-                android:textColor="?android:attr/textColorPrimary"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toTopOf="parent"/>
+                android:background="?android:attr/actionModeSplitBackground"
+                android:orientation="vertical">
 
-            <RatingBar
-                android:id="@+id/ratingBar"
-                style="@android:style/Widget.DeviceDefault.Light.RatingBar"
-                android:layout_width="0dp"
-                android:layout_height="48"
-                android:layout_marginStart="144dp"
-                android:layout_marginTop="8dp"
-                android:numStars="5"
-                android:rating="5"
-                android:scaleX=".8"
-                android:scaleY=".8"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_profile_name"/>
+                <TextView
+                    android:id="@+id/creds_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorAccent"
+                    android:padding="4dp"
+                    android:text="Credentials / Background"
+                    android:textAppearance="@android:style/TextAppearance.Material.Title"
+                    android:textColor="?android:attr/textColorPrimaryInverse"/>
 
-            <TextView
-                android:id="@+id/tv_services_section"
-                android:layout_width="0dp"
+                <LinearLayout
+                    android:id="@+id/creds_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/creds_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="Medical Degree"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                    <TextView
+                        android:id="@+id/creds_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="Doctorate in Engineering Mechanics"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                    <TextView
+                        android:id="@+id/creds_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="First Place Professional Fake-Barber Conest Winner"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/loc_section"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
-                android:background="?android:attr/colorAccent"
-                android:padding="8dp"
-                android:text="Services Provided"
-                android:textAppearance="@android:style/TextAppearance.Material.Title"
-                android:textColor="?android:attr/textColorPrimaryInverse"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ratingBar"/>
+                android:background="?android:attr/actionModeSplitBackground"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_services_content"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="8dp"
-                android:background="?attr/colorPrimary"
-                android:padding="8dp"
-                android:text="Doctor\nMechanic\nBarber"
-                android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:textColor="?android:attr/textColorPrimaryInverse"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_services_section"/>
+                <TextView
+                    android:id="@+id/loc_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorAccent"
+                    android:padding="4dp"
+                    android:text="Location"
+                    android:textAppearance="@android:style/TextAppearance.Material.Title"
+                    android:textColor="?android:attr/textColorPrimaryInverse"/>
 
-            <TextView
-                android:id="@+id/tv_creds_section"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:layout_marginStart="24dp"
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/loc_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/loc_text_content"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toStartOf="@+id/i_btn_external_map"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/street_adress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/colorPrimary"
+                            android:padding="4dp"
+                            android:text="13892 YOCKEY STREET"
+                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                            android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                        <TextView
+                            android:id="@+id/city_adress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="?attr/colorPrimary"
+                            android:padding="4dp"
+                            android:text="GARDEN GROVE CA 92844"
+                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                            android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/i_btn_external_map"
+                        android:layout_width="56dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0"
+                        android:background="?attr/colorAccent"
+                        app:layout_constraintBottom_toBottomOf="@+id/loc_text_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/loc_text_content"
+                        app:srcCompat="@android:drawable/ic_dialog_map"/>
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reviews_received_section"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
-                android:background="?android:attr/colorAccent"
-                android:padding="8dp"
-                android:text="Credentials / Background"
-                android:textAppearance="@android:style/TextAppearance.Material.Title"
-                android:textColor="?android:attr/textColorPrimaryInverse"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_services_content"/>
+                android:background="?android:attr/actionModeSplitBackground"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_creds_content"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="8dp"
-                android:background="?attr/colorPrimary"
-                android:padding="8dp"
-                android:text="Doctorate\nDegree in Mechanical Engineering\nHair Stylist Degree"
-                android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:textColor="?android:attr/textColorPrimaryInverse"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_creds_section"/>
+                <TextView
+                    android:id="@+id/reviews_received_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorAccent"
+                    android:padding="4dp"
+                    android:text="Reviews Received"
+                    android:textAppearance="@android:style/TextAppearance.Material.Title"
+                    android:textColor="?android:attr/textColorPrimaryInverse"/>
 
-            <TextView
-                android:id="@+id/tv_loc_section"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:layout_marginStart="24dp"
+                <LinearLayout
+                    android:id="@+id/reviews_received_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_review_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="Great doctor, terrible barber. (5/5)"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                    <TextView
+                        android:id="@+id/tv_review_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="Great mechanic, ok hair cut. (4/5)"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                    <TextView
+                        android:id="@+id/tv_review_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="Pretty ok haircut, I'll come again. (4/5)"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reviews_given_section"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
-                android:background="?android:attr/colorAccent"
-                android:padding="8dp"
-                android:text="Location"
-                android:textAppearance="@android:style/TextAppearance.Material.Title"
-                android:textColor="?android:attr/textColorPrimaryInverse"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_creds_content"/>
+                android:background="?android:attr/actionModeSplitBackground"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_loc_content"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="8dp"
-                android:background="?attr/colorPrimary"
-                android:padding="8dp"
-                android:text="13892 YOCKEY ST\nGARDEN GROVE CA 92844-2662"
-                android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:textColor="?android:attr/textColorPrimaryInverse"
-                app:layout_constraintBottom_toBottomOf="@+id/i_btn_external_map"
-                app:layout_constraintEnd_toStartOf="@+id/i_btn_external_map"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_loc_section"/>
+                <TextView
+                    android:id="@+id/reviews_given_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorAccent"
+                    android:padding="4dp"
+                    android:text="Reviews Given"
+                    android:textAppearance="@android:style/TextAppearance.Material.Title"
+                    android:textColor="?android:attr/textColorPrimaryInverse"/>
 
-            <ImageButton
-                android:id="@+id/i_btn_external_map"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginTop="8dp"
-                android:background="?android:attr/colorActivatedHighlight"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_loc_section"
-                app:srcCompat="@android:drawable/ic_dialog_map"/>
+                <LinearLayout
+                    android:id="@+id/reviews_given_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical">
 
-            <com.google.android.gms.maps.MapView
-                android:id="@+id/map_loc"
-                android:layout_width="0dp"
-                android:layout_height="256dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_loc_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tv_review_received_section"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
-                android:background="?android:attr/colorAccent"
-                android:padding="8dp"
-                android:text="Services Provided"
-                android:textAppearance="@android:style/TextAppearance.Material.Title"
-                android:textColor="?android:attr/textColorPrimaryInverse"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/map_loc"/>
+                        <TextView
+                            android:id="@+id/tv_review_given_username_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@android:color/holo_blue_dark"
+                            android:padding="4dp"
+                            android:text="DocJohnTruong"
+                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                            android:textColor="?android:attr/textColorPrimaryInverse"/>
 
-            <TextView
-                android:id="@+id/tv_reviews_given_content"
-                android:layout_width="0dp"
-                android:layout_height="1000"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:background="?attr/colorPrimary"
-                android:padding="8dp"
-                android:text="Doctor\nMechanic\nBarber"
-                android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:textColor="?android:attr/textColorPrimaryInverse"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_review_received_section"/>
+                        <TextView
+                            android:id="@+id/tv_review_given_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?attr/colorPrimary"
+                            android:padding="4dp"
+                            android:text="Great therapist (5/5)"
+                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                            android:textColor="?android:attr/textColorPrimaryInverse"/>
 
-        </android.support.constraint.ConstraintLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_review_given_username_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@android:color/holo_blue_dark"
+                            android:padding="4dp"
+                            android:text="BarberZ"
+                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                            android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                        <TextView
+                            android:id="@+id/tv_review_given_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?attr/colorPrimary"
+                            android:padding="4dp"
+                            android:text="An excelent hair stylist (5/5)"
+                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                            android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_review_given_username_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@android:color/holo_blue_dark"
+                            android:padding="4dp"
+                            android:text="VetKenny"
+                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                            android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                        <TextView
+                            android:id="@+id/tv_review_given_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?attr/colorPrimary"
+                            android:padding="4dp"
+                            android:text="Dog is healed (5/5)"
+                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                            android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="64dp"/>
+
+        </LinearLayout>
 
     </ScrollView>
 
