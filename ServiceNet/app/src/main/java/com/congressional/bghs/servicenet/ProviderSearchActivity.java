@@ -20,10 +20,13 @@ public class ProviderSearchActivity extends AppCompatActivity
 {
 
     NavigationView mNavigationView;
-    View headerView;
+    DrawerLayout mDrawer;
+    View mHeaderView;
     TextView mUsernameTextView;
     TextView mNameTextView;
     TextView mEmailAdressTextView;
+    View mAppBar;
+    View mContent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -33,34 +36,37 @@ public class ProviderSearchActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
+                this, mDrawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        mDrawer.addDrawerListener(toggle);
         toggle.syncState();
 
         mNavigationView = (NavigationView) findViewById(R.id.nav_view);
         mNavigationView.setNavigationItemSelectedListener(this);
 
-        headerView = mNavigationView.getHeaderView(0);
+        mHeaderView = mNavigationView.getHeaderView(0);
 
-        mUsernameTextView = (TextView) headerView.findViewById(R.id.tv_username);
+        mUsernameTextView = (TextView) mHeaderView.findViewById(R.id.tv_username);
         mUsernameTextView.setText(Variables.username);
 
-        mNameTextView = (TextView) headerView.findViewById(R.id.tv_name);
+        mNameTextView = (TextView) mHeaderView.findViewById(R.id.tv_name);
         mNameTextView.setText(Variables.firstName + " " + Variables.lastName);
 
-        mEmailAdressTextView = (TextView) headerView.findViewById(R.id.tv_email_adress);
+        mEmailAdressTextView = (TextView) mHeaderView.findViewById(R.id.tv_email_adress);
         mEmailAdressTextView.setText(Variables.emailAdress);
+
+        mAppBar = findViewById(R.id.i_app_bar_provider_search);
+        mContent = mAppBar.findViewById(R.id.i_content_provider_search);
     }
 
     @Override
     public void onBackPressed()
     {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START))
+        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (mDrawer.isDrawerOpen(GravityCompat.START))
         {
-            drawer.closeDrawer(GravityCompat.START);
+            mDrawer.closeDrawer(GravityCompat.START);
         }
         else
         {

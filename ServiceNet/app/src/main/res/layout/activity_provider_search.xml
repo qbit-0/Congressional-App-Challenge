@@ -10,6 +10,7 @@
     tools:openDrawer="start">
 
     <include
+        android:id="@+id/i_app_bar_provider_search"
         layout="@layout/app_bar_provider_search"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
