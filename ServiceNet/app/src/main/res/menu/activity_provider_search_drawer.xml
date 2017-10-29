@@ -4,18 +4,18 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_search"
-            android:title="Provider Search"/>
+            android:title="@string/nav_search_label"/>
         <item
-            android:id="@+id/nav_provide"
-            android:title="Provide Service"/>
+            android:id="@+id/nav_service"
+            android:title="@string/nav_service_label"/>
         <item
             android:id="@+id/nav_profile"
-            android:title="Profile"/>
+            android:title="@string/nav_profile_label"/>
         <item
             android:id="@+id/nav_settings"
-            android:title="Settings"/>
+            android:title="@string/nav_settings_label"/>
         <item
-            android:id="@+id/nav_about"
-            android:title="About"/>
+            android:id="@+id/nav_welcome"
+            android:title="@string/nav_welcome_label"/>
     </group>
 </menu>

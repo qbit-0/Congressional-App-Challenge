@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ProviderSearchActivity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_provider_search"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>

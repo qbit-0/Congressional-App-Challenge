@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity
                     @Override
                     public void run()
                     {
-                        Class destination = ProviderSearchActivity.class;
+                        Class destination = MainActivity.class;
                         Variables.username = mUsernameTextView.getText().toString();
                         Variables.emailAdress = Variables.username + "@gmail.com";
                         Variables.firstName = "Benedict";

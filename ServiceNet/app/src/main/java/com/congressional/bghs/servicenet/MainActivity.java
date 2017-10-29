@@ -1,8 +1,6 @@
 package com.congressional.bghs.servicenet;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,12 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class ProviderSearchActivity extends AppCompatActivity
+public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
 {
+    android.app.FragmentManager mFragmentManager;
 
     NavigationView mNavigationView;
     DrawerLayout mDrawer;
@@ -32,9 +30,11 @@ public class ProviderSearchActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_provider_search);
+        setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        mFragmentManager = getFragmentManager();
 
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -57,7 +57,12 @@ public class ProviderSearchActivity extends AppCompatActivity
         mEmailAdressTextView.setText(Variables.emailAdress);
 
         mAppBar = findViewById(R.id.i_app_bar_provider_search);
-        mContent = mAppBar.findViewById(R.id.i_content_provider_search);
+        mContent = mAppBar.findViewById(R.id.i_content_main);
+
+        mFragmentManager.beginTransaction()
+                .replace(R.id.i_content_main, new WelcomeFragment())
+                .commit();
+        setTitle(R.string.nav_welcome_label);
     }
 
     @Override
@@ -103,14 +108,30 @@ public class ProviderSearchActivity extends AppCompatActivity
         switch (id)
         {
             case R.id.nav_search:
+                mFragmentManager.beginTransaction()
+                        .replace(R.id.i_content_main, new SearchFragment())
+                        .commit();
+                setTitle(R.string.nav_search_label);
                 break;
-            case R.id.nav_provide:
+            case R.id.nav_service:
+                mFragmentManager.beginTransaction()
+                        .replace(R.id.i_content_main, new ServiceFragment())
+                        .commit();
+                setTitle(R.string.nav_service_label);
                 break;
             case R.id.nav_profile:
+                mFragmentManager.beginTransaction()
+                        .replace(R.id.i_content_main, new ProfileFragment())
+                        .commit();
+                setTitle(R.string.nav_profile_label);
                 break;
             case R.id.nav_settings:
                 break;
-            case R.id.nav_about:
+            case R.id.nav_welcome:
+                mFragmentManager.beginTransaction()
+                        .replace(R.id.i_content_main, new WelcomeFragment())
+                        .commit();
+                setTitle(R.string.nav_welcome_label);
                 break;
         }
 
