@@ -14,26 +14,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/tv_profile_name"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="32dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:padding="8dp"
-                android:text="Name"
-                android:textAppearance="@android:style/TextAppearance.Material.Display1"
-                android:textColor="?android:attr/textColorPrimary"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toTopOf="parent"/>
-
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -41,12 +25,41 @@
                 app:srcCompat="@mipmap/ic_launcher_round"/>
 
             <TextView
+                android:id="@+id/tv_profile_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                android:text="Name"
+                android:textAppearance="@android:style/TextAppearance.Material.Display1"
+                android:textColor="?android:attr/textColorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@android:style/Widget.DeviceDefault.Light.RatingBar"
+                android:layout_width="0dp"
+                android:layout_height="48"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="8dp"
+                android:numStars="5"
+                android:rating="5"
+                android:scaleX=".8"
+                android:scaleY=".8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profile_name"/>
+
+            <TextView
                 android:id="@+id/tv_services_section"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="24dp"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:background="?android:attr/colorAccent"
                 android:padding="8dp"
                 android:text="Services Provided"
@@ -54,7 +67,7 @@
                 android:textColor="?android:attr/textColorPrimaryInverse"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar"/>
 
             <TextView
                 android:id="@+id/tv_services_content"
@@ -160,6 +173,39 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_loc_content"/>
+
+            <TextView
+                android:id="@+id/tv_review_received_section"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:background="?android:attr/colorAccent"
+                android:padding="8dp"
+                android:text="Services Provided"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textColor="?android:attr/textColorPrimaryInverse"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/map_loc"/>
+
+            <TextView
+                android:id="@+id/tv_reviews_given_content"
+                android:layout_width="0dp"
+                android:layout_height="1000"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="?attr/colorPrimary"
+                android:padding="8dp"
+                android:text="Doctor\nMechanic\nBarber"
+                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                android:textColor="?android:attr/textColorPrimaryInverse"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_review_received_section"/>
 
         </android.support.constraint.ConstraintLayout>
 
