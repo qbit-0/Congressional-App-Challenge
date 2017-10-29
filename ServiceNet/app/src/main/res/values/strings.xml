@@ -16,4 +16,5 @@
     <string name="nav_profile_label">Profile</string>
     <string name="nav_settings_label">Settings</string>
     <string name="nav_welcome_label">Welcome</string>
+    <string name="search_hint">Search for Provider</string>
 </resources>
