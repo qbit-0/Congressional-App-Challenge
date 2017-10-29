@@ -7,9 +7,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="163dp"
-        android:text="Profile Layout"/>
+        android:text="Profile Layout"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="74dp"/>
 </RelativeLayout>
