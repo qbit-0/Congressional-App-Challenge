@@ -8,14 +8,15 @@
     android:orientation="vertical">
 
     <android.support.constraint.ConstraintLayout
+        android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/search_button"
             style="@android:style/Widget.Material.ImageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="8dp"
@@ -27,9 +28,10 @@
             app:srcCompat="?android:attr/actionModeWebSearchDrawable"/>
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/search_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
@@ -37,75 +39,96 @@
             android:ems="10"
             android:hint="@string/search_hint"
             android:inputType="textPersonName"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/search_button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
     </android.support.constraint.ConstraintLayout>
 
     <ScrollView
+        android:id="@+id/sv_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/search_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <android.support.constraint.ConstraintLayout
-                android:id="@+id/seach_result_1"
+            <LinearLayout
+                android:id="@+id/search_results"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="16dp"
-                android:background="?attr/colorPrimary">
+                android:orientation="vertical"
+                android:visibility="invisible">
 
-                <ImageView
-                    android:id="@+id/iv_group_profile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@mipmap/ic_launcher_round"/>
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/seach_result_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:background="?attr/colorPrimary">
 
-                <TextView
-                    android:id="@+id/tv_group_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Doctors of Garden Grove"
-                    android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
-                    android:textColor="?android:attr/textColorTertiaryInverse"
-                    app:layout_constraintStart_toEndOf="@+id/iv_group_profile"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    <ImageView
+                        android:id="@+id/iv_group_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/ic_launcher_round"/>
 
-                <TextView
-                    android:id="@+id/tv_member_count"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:text="120 Members"
-                    android:textColor="?android:attr/textColorTertiaryInverse"
-                    app:layout_constraintStart_toEndOf="@+id/iv_group_profile"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_group_name"/>
+                    <TextView
+                        android:id="@+id/tv_group_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Doctors of Garden Grove"
+                        android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
-                <TextView
-                    android:id="@+id/tv_group_description"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
-                    android:text="Doctors of Garden Grove is an apointment-based health organization."
-                    android:textAlignment="textStart"
-                    android:textColor="?android:attr/textColorTertiaryInverse"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_member_count"/>
-            </android.support.constraint.ConstraintLayout>
+                    <TextView
+                        android:id="@+id/tv_member_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="120 Members"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_group_name"/>
+
+                    <TextView
+                        android:id="@+id/tv_group_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Doctors of Garden Grove is an apointment-based health organization."
+                        android:textAlignment="textStart"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_member_count"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/search_progress_bar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteY="152dp"/>
 
         </LinearLayout>
     </ScrollView>

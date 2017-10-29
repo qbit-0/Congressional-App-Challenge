@@ -2,10 +2,17 @@ package com.congressional.bghs.servicenet;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.ScrollView;
 
 /**
  * Created by duyph on 10/28/2017.
@@ -13,13 +20,50 @@ import android.view.ViewGroup;
 
 public class SearchFragment extends Fragment
 {
-    View myView;
+    View view;
+
+    ConstraintLayout mSearchBar;
+    ImageButton mSearchButton;
+
+    ScrollView mContentScrollView;
+    LinearLayout mSearchContent;
+    LinearLayout mSearchResults;
+    ProgressBar mSearchProgressBar;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState)
     {
-        myView = inflater.inflate(R.layout.search, container, false);
-        return myView;
+        view = inflater.inflate(R.layout.search, container, false);
+
+        mSearchBar = (ConstraintLayout) view.findViewById(R.id.search_bar);
+        mSearchButton = (ImageButton) mSearchBar.findViewById(R.id.search_button);
+
+        mContentScrollView = (ScrollView) view.findViewById(R.id.sv_content);
+        mSearchContent = (LinearLayout) mContentScrollView.findViewById(R.id.search_content);
+        mSearchResults = (LinearLayout) mSearchContent.findViewById(R.id.search_results);
+        mSearchProgressBar = (ProgressBar) mSearchContent.findViewById(R.id.search_progress_bar);
+
+        mSearchButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                mSearchProgressBar.setVisibility(View.VISIBLE);
+
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable()
+                {
+                    @Override
+                    public void run()
+                    {
+                        mSearchProgressBar.setVisibility(View.INVISIBLE);
+                        mSearchResults.setVisibility(View.VISIBLE);
+                    }
+                }, 1000);
+            }
+        });
+
+        return view;
     }
 }
