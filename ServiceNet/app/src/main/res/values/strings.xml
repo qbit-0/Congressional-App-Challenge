@@ -17,4 +17,14 @@
     <string name="nav_settings_label">Settings</string>
     <string name="nav_welcome_label">Welcome</string>
     <string name="search_hint">Search for Provider</string>
+    <string name="first_name">Benedict</string>
+    <string name="last_name">Cucumberpatch</string>
+    <string name="first_name_match">John</string>
+    <string name="last_name_match">Spagetti</string>
+    <string name="address_street">13892 YOCKEY STREET</string>
+    <string name="address_city">GARDEN GROVE CA 92844</string>
+    <string name="current_date">11/1/17</string>
+    <string name="current_time">10:25 AM</string>
+    <string name="appointment_date">11/1/17</string>
+    <string name="appointment_time">10:20 AM</string>
 </resources>

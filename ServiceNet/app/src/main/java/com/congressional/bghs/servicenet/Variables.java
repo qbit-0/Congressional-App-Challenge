@@ -7,7 +7,6 @@ package com.congressional.bghs.servicenet;
 public class Variables
 {
     static String username;
-    static String firstName;
-    static String lastName;
     static String emailAdress;
+    static boolean matched;
 }

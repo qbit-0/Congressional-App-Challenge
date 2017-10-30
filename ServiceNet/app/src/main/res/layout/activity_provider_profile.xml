@@ -171,7 +171,7 @@
                         android:hint="Date"
                         android:inputType="date"
                         android:padding="4dp"
-                        android:text="11/1/17"/>
+                        android:text="@string/current_date"/>
 
                     <EditText
                         android:id="@+id/tv_from_time"
@@ -182,7 +182,7 @@
                         android:hint="Time"
                         android:inputType="time"
                         android:padding="4dp"
-                        android:text="10:25 AM"/>
+                        android:text="@string/current_time"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -266,7 +266,7 @@
                             android:ems="10"
                             android:inputType="date"
                             android:padding="4dp"
-                            android:text="13892 YOCKEY STREET"/>
+                            android:text="@string/address_street"/>
 
                         <EditText
                             android:id="@+id/et_city_address"
@@ -276,7 +276,7 @@
                             android:ems="10"
                             android:inputType="date"
                             android:padding="4dp"
-                            android:text="GARDEN GROVE CA 92844"/>
+                            android:text="@string/address_city"/>
 
                     </LinearLayout>
 

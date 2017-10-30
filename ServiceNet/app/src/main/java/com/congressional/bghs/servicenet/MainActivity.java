@@ -51,7 +51,9 @@ public class MainActivity extends AppCompatActivity
         mUsernameTextView.setText(Variables.username);
 
         mNameTextView = (TextView) mHeaderView.findViewById(R.id.tv_name);
-        mNameTextView.setText(Variables.firstName + " " + Variables.lastName);
+        String firstName = getString(R.string.first_name);
+        String lastName = getString(R.string.last_name);
+        mNameTextView.setText(firstName + " " + lastName);
 
         mEmailAdressTextView = (TextView) mHeaderView.findViewById(R.id.tv_email_adress);
         mEmailAdressTextView.setText(Variables.emailAdress);
