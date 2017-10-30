@@ -12,7 +12,7 @@
     <string name="title_activity_provider_search">Search</string>
     <string name="title_activity_servicenet">ServiceNet</string>
     <string name="nav_search_label">Provider Search</string>
-    <string name="nav_service_label">Manage Services</string>
+    <string name="nav_service_label">Accept Requests</string>
     <string name="nav_profile_label">Profile</string>
     <string name="nav_settings_label">Settings</string>
     <string name="nav_welcome_label">Welcome</string>
