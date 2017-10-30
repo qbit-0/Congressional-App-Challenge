@@ -14,12 +14,6 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.google.android.gms.maps.MapView;
-
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URL;
-
 /**
  * Created by duyph on 10/28/2017.
  */
@@ -46,7 +40,7 @@ public class ProfileFragment extends Fragment
         mProfileLinearLayout = (LinearLayout) mProfileScrollView.findViewById(R.id.ll_profile);
 
         mProfileHeader = (ConstraintLayout) mProfileLinearLayout.findViewById(R.id.profile_header);
-        mProfileFirstName = (TextView) mProfileHeader.findViewById(R.id.tv_profile_first_name);
+        mProfileFirstName = (TextView) mProfileHeader.findViewById(R.id.tv_profile_group_name);
         mProfileLastName = (TextView) mProfileHeader.findViewById(R.id.tv_profile_last_name);
 
         mLocSection = (LinearLayout) mProfileLinearLayout.findViewById(R.id.loc_section);
@@ -68,7 +62,7 @@ public class ProfileFragment extends Fragment
                         .query(adressString)
                         .build();
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                if (intent.resolveActivity(getContext().getPackageManager()) != null)
+                if (intent.resolveActivity(view.getContext().getPackageManager()) != null)
                     startActivity(intent);
             }
         });
