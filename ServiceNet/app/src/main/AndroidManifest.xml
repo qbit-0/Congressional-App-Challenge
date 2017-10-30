@@ -25,6 +25,8 @@
         </activity>
         <activity android:name=".ProviderProfileActivity">
         </activity>
+        <activity android:name=".MatchActivity">
+        </activity>
     </application>
 
 </manifest>

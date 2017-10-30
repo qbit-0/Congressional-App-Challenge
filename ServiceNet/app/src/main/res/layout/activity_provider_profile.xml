@@ -170,7 +170,8 @@
                         android:ems="10"
                         android:hint="Date"
                         android:inputType="date"
-                        android:padding="4dp"/>
+                        android:padding="4dp"
+                        android:text="11/1/17"/>
 
                     <EditText
                         android:id="@+id/tv_from_time"
@@ -180,7 +181,8 @@
                         android:ems="10"
                         android:hint="Time"
                         android:inputType="time"
-                        android:padding="4dp"/>
+                        android:padding="4dp"
+                        android:text="10:25 AM"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -300,10 +302,10 @@
                         android:id="@+id/tv_proximity_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="3"
+                        android:layout_weight="1"
                         android:background="?attr/colorPrimary"
                         android:padding="4dp"
-                        android:text="Proximity"
+                        android:text="Proximity (Optional)"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
