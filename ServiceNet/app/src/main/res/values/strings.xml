@@ -27,4 +27,5 @@
     <string name="current_time">10:25 AM</string>
     <string name="appointment_date">11/1/17</string>
     <string name="appointment_time">10:20 AM</string>
+    <string name="fullname_match">John Spagetti</string>
 </resources>

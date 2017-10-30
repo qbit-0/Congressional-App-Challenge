@@ -377,7 +377,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="JohnDocTor (John Smith)"
+                            android:text="@string/fullname_match"
                             android:textAppearance="@android:style/TextAppearance.DeviceDefault.SearchResult.Title"
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
 
@@ -389,6 +389,49 @@
                             android:numStars="5"
                             android:progressBackgroundTint="@android:color/darker_gray"
                             android:rating="3"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:background="?attr/colorPrimary"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/imageView_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@mipmap/ic_launcher_round"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Steven Mellow"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.SearchResult.Title"
+                            android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                        <RatingBar
+                            android:id="@+id/ratingBar2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:numStars="5"
+                            android:progressBackgroundTint="@android:color/darker_gray"
+                            android:rating="1"/>
 
                     </LinearLayout>
 
