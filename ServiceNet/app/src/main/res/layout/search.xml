@@ -61,20 +61,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:visibility="invisible">
+                android:visibility="visible">
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="16dp"
-                    android:background="?attr/colorPrimary">
+                    android:background="?attr/colorPrimary"
+                    android:padding="16dp">
 
                     <ImageView
                         android:id="@+id/iv_group_profile_1"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@mipmap/ic_group_profile_2"/>
@@ -83,9 +82,7 @@
                         android:id="@+id/tv_group_name_1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
                         android:text="Doctors of Anaheim (Group)"
                         android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
                         android:textColor="?android:attr/textColorTertiaryInverse"
@@ -96,7 +93,7 @@
                     <TextView
                         android:id="@+id/tv_member_count_1"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:text="89 Members"
                         android:textColor="?android:attr/textColorTertiaryInverse"
                         app:layout_constraintEnd_toEndOf="@+id/tv_group_name_1"
@@ -107,14 +104,9 @@
                         android:id="@+id/tv_group_description_1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
                         android:text="Doctors of Anaheim specializes in providing the best care for all patients no matter the conditions. Here, we strive to offer as many services as we can to help people who need medical attention. "
                         android:textAlignment="textStart"
                         android:textColor="?android:attr/textColorTertiaryInverse"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tv_member_count_1"/>
@@ -125,14 +117,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="16dp"
-                    android:background="?attr/colorPrimary">
+                    android:background="?attr/colorPrimary"
+                    android:padding="16dp">
 
                     <ImageView
                         android:id="@+id/iv_group_profile_2"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@mipmap/ic_group_profile_3"/>
@@ -141,9 +132,7 @@
                         android:id="@+id/tv_group_name_2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
                         android:text="Woodland Hills Doctors (Group)"
                         android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
                         android:textColor="?android:attr/textColorTertiaryInverse"
@@ -154,7 +143,7 @@
                     <TextView
                         android:id="@+id/tv_member_count_2"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:text="42 Members"
                         android:textColor="?android:attr/textColorTertiaryInverse"
                         app:layout_constraintEnd_toEndOf="@+id/tv_group_name_2"
@@ -165,14 +154,9 @@
                         android:id="@+id/tv_group_description_2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="32dp"
                         android:text="Doctors of Woodland Hills focuses on providing services that give patients the best care in the area. With doctors who have had years of experience in medical field, we hope to save lives and help make people aware of how to live a healthy life."
                         android:textAlignment="textStart"
                         android:textColor="?android:attr/textColorTertiaryInverse"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tv_member_count_2"/>
@@ -183,14 +167,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="16dp"
-                    android:background="?attr/colorPrimary">
+                    android:background="?attr/colorPrimary"
+                    android:padding="16dp">
 
                     <ImageView
                         android:id="@+id/iv_group_profile_3"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@mipmap/ic_group_profile_4"/>
@@ -199,9 +182,7 @@
                         android:id="@+id/tv_group_name_3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
                         android:text="Doctors of Los Angeles (Group)"
                         android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
                         android:textColor="?android:attr/textColorTertiaryInverse"
@@ -212,7 +193,7 @@
                     <TextView
                         android:id="@+id/tv_member_count_3"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:text="319 Members"
                         android:textColor="?android:attr/textColorTertiaryInverse"
                         app:layout_constraintEnd_toEndOf="@+id/tv_group_name_3"
@@ -223,14 +204,9 @@
                         android:id="@+id/tv_group_description_3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="32dp"
                         android:text="Doctors of Los Angeles is committed to your health and safety. Specialists from dieticians to family doctors are always available to provide the best service that you need to stay healthy. No matter how many people need health assistance, Doctors of Los Angeles will be there to assist you."
                         android:textAlignment="textStart"
                         android:textColor="?android:attr/textColorTertiaryInverse"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tv_member_count_3"/>
@@ -241,14 +217,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="16dp"
-                    android:background="?attr/colorPrimary">
+                    android:background="?attr/colorPrimary"
+                    android:padding="16dp">
 
                     <ImageView
                         android:id="@+id/iv_group_profile_4"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@mipmap/ic_group_profile_5"/>
@@ -257,9 +232,7 @@
                         android:id="@+id/tv_group_name_4"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
                         android:text="Fountain Valley Dentists (Group)"
                         android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
                         android:textColor="?android:attr/textColorTertiaryInverse"
@@ -270,7 +243,7 @@
                     <TextView
                         android:id="@+id/tv_member_count_4"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:text="35 Members"
                         android:textColor="?android:attr/textColorTertiaryInverse"
                         app:layout_constraintEnd_toEndOf="@+id/tv_group_name_4"
@@ -281,14 +254,9 @@
                         android:id="@+id/tv_group_description_4"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="32dp"
                         android:text="Fountain Valley Dentists specializes in high-quality, appointment-based service for your perfect smile."
                         android:textAlignment="textStart"
                         android:textColor="?android:attr/textColorTertiaryInverse"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tv_member_count_4"/>
@@ -300,14 +268,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="16dp"
-                    android:background="?attr/colorPrimary">
+                    android:background="?attr/colorPrimary"
+                    android:padding="16dp">
 
                     <ImageView
                         android:id="@+id/iv_group_profile"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@mipmap/ic_group_profile_1"/>
@@ -316,9 +283,7 @@
                         android:id="@+id/tv_group_name"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
                         android:text="Doctors of Garden Grove (Group)"
                         android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
                         android:textColor="?android:attr/textColorTertiaryInverse"
@@ -329,7 +294,7 @@
                     <TextView
                         android:id="@+id/tv_member_count"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:text="121 Members"
                         android:textColor="?android:attr/textColorTertiaryInverse"
                         app:layout_constraintEnd_toEndOf="@+id/tv_group_name"
@@ -340,14 +305,9 @@
                         android:id="@+id/tv_group_description"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="32dp"
                         android:text="@string/clickable_desc"
                         android:textAlignment="textStart"
                         android:textColor="?android:attr/textColorTertiaryInverse"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tv_member_count"/>
@@ -358,14 +318,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="16dp"
-                    android:background="?attr/colorPrimary">
+                    android:background="?attr/colorPrimary"
+                    android:padding="16dp">
 
                     <ImageView
                         android:id="@+id/iv_group_profile_5"
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@mipmap/ic_group_profile_6"/>
@@ -374,9 +333,7 @@
                         android:id="@+id/tv_group_name_5"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
                         android:text="Doctors of Westminster (Group)"
                         android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
                         android:textColor="?android:attr/textColorTertiaryInverse"
@@ -387,7 +344,7 @@
                     <TextView
                         android:id="@+id/tv_member_count_5"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:text="113 Members"
                         android:textColor="?android:attr/textColorTertiaryInverse"
                         app:layout_constraintEnd_toEndOf="@+id/tv_group_name_5"
@@ -398,14 +355,9 @@
                         android:id="@+id/tv_group_description_5"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="32dp"
                         android:text="With the Doctors of Westminster, doctors will always provide the highest quality healthcare with the lowest cost. Our tenants are always quality, quantity, and competitive hiring. We specialize in state-of-the-art treatments that utilize our current technology to its limits, lowering-costs while improving service. Saving lives, our speciality, ensuring that you still have money in your bank is a guarantee!"
                         android:textAlignment="textStart"
                         android:textColor="?android:attr/textColorTertiaryInverse"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tv_member_count_5"/>
