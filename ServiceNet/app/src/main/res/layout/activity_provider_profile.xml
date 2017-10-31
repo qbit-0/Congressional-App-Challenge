@@ -61,7 +61,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="GROUP: Doctors of Garden Grove is an appointment-based health organization based in Garden Grove."
+                    android:text="@string/clickable_desc"
                     app:layout_constraintEnd_toEndOf="@+id/tv_profile_group_name"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/profile_pic"/>
@@ -357,7 +357,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
                     android:padding="4dp"
-                    android:text="Members (120)"
+                    android:text="Members (121)"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
 

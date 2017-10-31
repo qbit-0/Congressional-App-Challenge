@@ -28,4 +28,5 @@
     <string name="appointment_time">10:20 AM</string>
     <string name="fullname_match">Dr. Kim Himler</string>
     <string name="chosen_service_match">General Doctor</string>
+    <string name="clickable_desc">Doctors of Garden Grove is an appointment-based health organization based in Garden Grove. We are a growing community of specialists looking to serve your needs. To ensure dependability, our doctors are screened based on user-feedback. Always a helping hand!</string>
 </resources>
