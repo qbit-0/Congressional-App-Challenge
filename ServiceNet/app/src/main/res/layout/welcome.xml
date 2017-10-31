@@ -36,7 +36,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Favorites"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -44,10 +44,13 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="0"
                     android:background="?attr/colorPrimary"
                     android:orientation="horizontal"
-                    android:padding="4dp">
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -89,7 +92,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="?attr/colorPrimary"
-                    android:padding="4dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
                     android:text="Barber"
                     android:textAppearance="@android:style/TextAppearance.Material.Body1"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -103,13 +108,13 @@
                 android:layout_marginTop="16dp"
                 android:background="?android:attr/actionModeSplitBackground"
                 android:orientation="vertical"
-                android:visibility="invisible">
+                android:visibility="visible">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Appointments"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -118,7 +123,7 @@
                     android:id="@+id/appointment_content"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="vertical"
                     android:visibility="visible">
 
@@ -128,7 +133,9 @@
                         android:layout_marginTop="0dp"
                         android:background="?attr/colorPrimary"
                         android:orientation="horizontal"
-                        android:padding="4dp">
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="8dp">
 
                         <ImageView
                             android:id="@+id/imageView"
@@ -173,7 +180,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="?attr/colorPrimary"
-                            android:padding="4dp"
+                            android:padding="8dp"
                             android:text="@string/chosen_service_match"
                             android:textAppearance="@android:style/TextAppearance.Material.Body1"
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -183,7 +190,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="?attr/colorPrimary"
-                            android:padding="4dp"
+                            android:padding="8dp"
                             android:text="@string/appointment_date"
                             android:textAppearance="@android:style/TextAppearance.Material.Body1"
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -193,7 +200,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="?attr/colorPrimary"
-                            android:padding="4dp"
+                            android:padding="8dp"
                             android:text="@string/appointment_time"
                             android:textAppearance="@android:style/TextAppearance.Material.Body1"
                             android:textColor="?android:attr/textColorPrimaryInverse"/>

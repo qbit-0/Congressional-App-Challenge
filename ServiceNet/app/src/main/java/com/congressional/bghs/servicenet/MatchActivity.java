@@ -42,7 +42,7 @@ public class MatchActivity extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                String adressString = "9401 WESTMINSTER AVE, CA";
+                String adressString = "9401 WESTMINSTER AVE, GARDEN GROVE, CA";
                 Uri.Builder uriBuilder = new Uri.Builder();
                 Uri uri = uriBuilder.scheme("geo")
                         .path("0, 0")
