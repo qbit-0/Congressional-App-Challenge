@@ -69,10 +69,10 @@
                             android:padding="4dp">
 
                             <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
                                 android:layout_weight="0"
-                                app:srcCompat="@mipmap/ic_launcher_round"/>
+                                app:srcCompat="@mipmap/ic_profile_6"/>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -329,10 +329,10 @@
 
                             <ImageView
                                 android:id="@+id/imageView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
                                 android:layout_weight="0"
-                                app:srcCompat="@mipmap/ic_launcher_round"/>
+                                app:srcCompat="@mipmap/ic_profile_5"/>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -342,7 +342,7 @@
 
                                 <TextView
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
                                     android:layout_weight="2"
                                     android:text="Tom Pham"
                                     android:textAppearance="@android:style/TextAppearance.DeviceDefault.SearchResult.Title"

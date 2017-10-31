@@ -373,7 +373,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@mipmap/ic_launcher_round"/>
+                        app:srcCompat="@mipmap/ic_profile_2"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -413,7 +413,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@mipmap/ic_launcher_round"/>
+                        app:srcCompat="@mipmap/ic_profile_3"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -453,7 +453,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@mipmap/ic_launcher_round"/>
+                        app:srcCompat="@mipmap/ic_profile_4"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
