@@ -27,7 +27,7 @@ public class ProfileFragment extends Fragment
     TextView mProfileFirstName;
     TextView mProfileLastName;
     LinearLayout mLocSection;
-    ConstraintLayout mLocContent;
+    LinearLayout mLocContent;
     ImageButton mLocExternalMap;
 
     @Nullable
@@ -44,7 +44,7 @@ public class ProfileFragment extends Fragment
         mProfileLastName = (TextView) mProfileHeader.findViewById(R.id.tv_profile_last_name);
 
         mLocSection = (LinearLayout) mProfileLinearLayout.findViewById(R.id.loc_section);
-        mLocContent = (ConstraintLayout) mLocSection.findViewById(R.id.loc_content);
+        mLocContent = (LinearLayout) mLocSection.findViewById(R.id.loc_content);
         mLocExternalMap = (ImageButton) mLocContent.findViewById(R.id.i_btn_external_map);
 
         mLocExternalMap.setOnClickListener(new View.OnClickListener()

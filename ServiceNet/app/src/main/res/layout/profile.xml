@@ -90,7 +90,6 @@
             </android.support.constraint.ConstraintLayout>
 
             <LinearLayout
-                android:id="@+id/services_section"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -98,7 +97,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/services_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
@@ -108,14 +106,12 @@
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                 <LinearLayout
-                    android:id="@+id/services_content"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="4dp"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/service_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
@@ -125,7 +121,6 @@
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <TextView
-                        android:id="@+id/service_2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -136,7 +131,6 @@
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <TextView
-                        android:id="@+id/service_3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -150,7 +144,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/creds_section"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -158,7 +151,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/creds_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
@@ -168,14 +160,12 @@
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                 <LinearLayout
-                    android:id="@+id/creds_content"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="4dp"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/creds_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
@@ -185,7 +175,6 @@
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <TextView
-                        android:id="@+id/creds_2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -196,13 +185,12 @@
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <TextView
-                        android:id="@+id/creds_3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:background="?attr/colorPrimary"
                         android:padding="4dp"
-                        android:text="First Place Professional Fake-Barber Conest Winner"
+                        android:text="First Place Professional Hairdressing Conest Winner"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
                 </LinearLayout>
@@ -212,13 +200,12 @@
             <LinearLayout
                 android:id="@+id/loc_section"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
                 android:background="?android:attr/actionModeSplitBackground"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/loc_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
@@ -227,60 +214,39 @@
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
 
-                <android.support.constraint.ConstraintLayout
+                <LinearLayout
                     android:id="@+id/loc_content"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
 
-                    <LinearLayout
+                    <TextView
                         android:id="@+id/loc_text_content"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:orientation="vertical"
-                        app:layout_constraintEnd_toStartOf="@+id/i_btn_external_map"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <TextView
-                            android:id="@+id/street_adress"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="?attr/colorPrimary"
-                            android:padding="4dp"
-                            android:text="13892 YOCKEY STREET"
-                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                            android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                        <TextView
-                            android:id="@+id/city_adress"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:background="?attr/colorPrimary"
-                            android:padding="4dp"
-                            android:text="GARDEN GROVE CA 92844-2662 "
-                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                            android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                    </LinearLayout>
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="13892 Yockey St Garden Grove, CA"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <ImageButton
                         android:id="@+id/i_btn_external_map"
-                        android:layout_width="56dp"
-                        android:layout_height="0dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:layout_weight="0"
                         android:background="?attr/colorAccent"
-                        app:layout_constraintBottom_toBottomOf="@+id/loc_text_content"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/loc_text_content"
-                        app:srcCompat="@android:drawable/ic_dialog_map"/>
-                </android.support.constraint.ConstraintLayout>
+                        app:srcCompat="@android:drawable/ic_dialog_map"
+                        tools:layout_editor_absoluteY="4dp"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/reviews_received_section"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
@@ -288,7 +254,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/reviews_received_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
@@ -298,14 +263,12 @@
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                 <LinearLayout
-                    android:id="@+id/reviews_received_content"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="4dp"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tv_review_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
@@ -315,7 +278,6 @@
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <TextView
-                        android:id="@+id/tv_review_2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -326,7 +288,6 @@
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <TextView
-                        android:id="@+id/tv_review_3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -341,7 +302,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/reviews_given_section"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
@@ -349,7 +309,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/reviews_given_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
@@ -359,7 +318,6 @@
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                 <LinearLayout
-                    android:id="@+id/reviews_given_content"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="4dp"
@@ -368,27 +326,25 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/tv_review_given_username_1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
                             android:background="@android:color/holo_blue_dark"
                             android:padding="4dp"
-                            android:text="DocJohnTruong"
+                            android:text="Ken O’hara (Barber)"
                             android:textAppearance="@android:style/TextAppearance.Material.Body1"
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                         <TextView
-                            android:id="@+id/tv_review_given_1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="?attr/colorPrimary"
                             android:padding="4dp"
-                            android:text="Great therapist (5/5)"
+                            android:text="I don’t cut my own hair, this guy is the second best barber in Garden Grove. (5/5) "
                             android:textAppearance="@android:style/TextAppearance.Material.Body1"
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
 
@@ -397,56 +353,26 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:layout_marginTop="4dp"
+                        android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/tv_review_given_username_2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
                             android:background="@android:color/holo_blue_dark"
                             android:padding="4dp"
-                            android:text="BarberZ"
+                            android:text="Johnny Thai (Home Renovator)"
                             android:textAppearance="@android:style/TextAppearance.Material.Body1"
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                         <TextView
-                            android:id="@+id/tv_review_given_2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="?attr/colorPrimary"
                             android:padding="4dp"
-                            android:text="An excelent hair stylist (5/5)"
-                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                            android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/tv_review_given_username_3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:background="@android:color/holo_blue_dark"
-                            android:padding="4dp"
-                            android:text="VetKenny"
-                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                            android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                        <TextView
-                            android:id="@+id/tv_review_given_3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="?attr/colorPrimary"
-                            android:padding="4dp"
-                            android:text="Dog is healed (5/5)"
+                            android:text="Did a great job fixing up my kitchen! Looks good as new! Just wished his pricing wasn’t so high (4/5)"
                             android:textAppearance="@android:style/TextAppearance.Material.Body1"
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
 

@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
                     android:padding="4dp"
-                    android:text="Provider Requests"
+                    android:text="Requests From Group"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
 
@@ -52,7 +52,265 @@
                         android:visibility="visible">
 
                         <TextView
-                            android:id="@+id/service_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/colorPrimary"
+                            android:padding="4dp"
+                            android:text="Doctors of Garden Grove"
+                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                            android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp"
+                            android:background="?attr/colorPrimary"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0"
+                                app:srcCompat="@mipmap/ic_launcher_round"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:text="Abel Gomez"
+                                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.SearchResult.Title"
+                                    android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="?attr/colorPrimary"
+                                android:padding="4dp"
+                                android:text="Location"
+                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                                android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="?attr/colorPrimary"
+                                android:padding="4dp"
+                                android:text="11160 Warner Ave # 201, Fountain Valley, CA 92708"
+                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                                android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="?attr/colorPrimary"
+                                android:padding="4dp"
+                                android:text="Service"
+                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                                android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="?attr/colorPrimary"
+                                android:padding="4dp"
+                                android:text="General Doctor"
+                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                                android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="?attr/colorPrimary"
+                                android:padding="4dp"
+                                android:text="Desc"
+                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                                android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="?attr/colorPrimary"
+                                android:padding="4dp"
+                                android:text="I got a bad cough."
+                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                                android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="?attr/colorPrimary"
+                                android:padding="4dp"
+                                android:text="From"
+                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                                android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="?attr/colorPrimary"
+                                android:padding="4dp"
+                                android:text="@string/appointment_date"
+                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                                android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="?attr/colorPrimary"
+                                android:padding="4dp"
+                                android:text="@string/appointment_time"
+                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                                android:textColor="?android:attr/textColorPrimaryInverse"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="?attr/colorPrimary"
+                                android:padding="4dp"
+                                android:text="To"
+                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                                android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="?attr/colorPrimary"
+                                android:padding="4dp"
+                                android:text="Unspecified"
+                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                                android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="?attr/colorPrimary"
+                                android:padding="4dp"
+                                android:text="Unspecified"
+                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                                android:textColor="?android:attr/textColorPrimaryInverse"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="?attr/colorPrimary"
+                        android:text="Accept"
+                        android:textColor="?android:attr/textColorPrimaryInverse"
+                        tools:checked="false"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="Mechanics United (Garden Grove)"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="QuickCuts"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?android:attr/actionModeSplitBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorAccent"
+                    android:padding="4dp"
+                    android:text="Direct Request"
+                    android:textAppearance="@android:style/TextAppearance.Material.Title"
+                    android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="?attr/colorPrimary"
@@ -83,11 +341,10 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/name_1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
-                                    android:text="Bert Churt"
+                                    android:text="Tom Pham"
                                     android:textAppearance="@android:style/TextAppearance.DeviceDefault.SearchResult.Title"
                                     android:textColor="?android:attr/textColorPrimaryInverse"/>
 
@@ -101,7 +358,6 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/tv_service"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
@@ -112,13 +368,12 @@
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                             <TextView
-                                android:id="@+id/tv_date"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
                                 android:padding="4dp"
-                                android:text="12984 BURT AVE WESTMINSTER, CA 92210-212"
+                                android:text="9750 Chapman Ave, Garden Grove, CA 92841"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
 
@@ -130,24 +385,22 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/tv_service"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:background="?attr/colorPrimary"
                                 android:padding="4dp"
-                                android:text="Job"
+                                android:text="Service"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                             <TextView
-                                android:id="@+id/tv_date"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
                                 android:padding="4dp"
-                                android:text="Doctor"
+                                android:text="Barber"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
 
@@ -159,7 +412,33 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/tv_service"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="?attr/colorPrimary"
+                                android:padding="4dp"
+                                android:text="Desc"
+                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                                android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="?attr/colorPrimary"
+                                android:padding="4dp"
+                                android:text="Combover with #1 sides and a fade."
+                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                                android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -170,7 +449,6 @@
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                             <TextView
-                                android:id="@+id/tv_date"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -181,7 +459,6 @@
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                             <TextView
-                                android:id="@+id/tv_time"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -198,7 +475,6 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/tv_service"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -209,7 +485,6 @@
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                             <TextView
-                                android:id="@+id/tv_date"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -220,7 +495,6 @@
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                             <TextView
-                                android:id="@+id/tv_time"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -234,248 +508,6 @@
                     </LinearLayout>
 
                     <Switch
-                        android:id="@+id/switch1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:background="?attr/colorPrimary"
-                        android:text="Accept"
-                        android:textColor="?android:attr/textColorPrimaryInverse"
-                        tools:checked="false"/>
-
-                    <TextView
-                        android:id="@+id/service_2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:background="?attr/colorPrimary"
-                        android:padding="4dp"
-                        android:text="Mechanics United (Garden Grove)"
-                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                        android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                    <TextView
-                        android:id="@+id/service_3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:background="?attr/colorPrimary"
-                        android:padding="4dp"
-                        android:text="QuickCuts"
-                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                        android:textColor="?android:attr/textColorPrimaryInverse"/>
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/direct_section"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="?android:attr/actionModeSplitBackground"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/direct_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="?attr/colorAccent"
-                    android:padding="4dp"
-                    android:text="Direct Request"
-                    android:textAppearance="@android:style/TextAppearance.Material.Title"
-                    android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                <LinearLayout
-                    android:id="@+id/services_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
-                    android:orientation="vertical"
-                    >
-
-                    <LinearLayout
-                        android:id="@+id/appointment_content"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="4dp"
-                        android:orientation="vertical"
-                        android:visibility="visible">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="0dp"
-                            android:background="?attr/colorPrimary"
-                            android:orientation="horizontal"
-                            android:padding="4dp">
-
-                            <ImageView
-                                android:id="@+id/imageView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="0"
-                                app:srcCompat="@mipmap/ic_launcher_round"/>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:id="@+id/name_2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="2"
-                                    android:text="Mickey Mann"
-                                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.SearchResult.Title"
-                                    android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/tv_service"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="2"
-                                android:background="?attr/colorPrimary"
-                                android:padding="4dp"
-                                android:text="Location"
-                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                                android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                            <TextView
-                                android:id="@+id/tv_date"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="?attr/colorPrimary"
-                                android:padding="4dp"
-                                android:text="21984 FAIL AVE WESTMINSTER, CA 92210-112"
-                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                                android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/tv_service"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="2"
-                                android:background="?attr/colorPrimary"
-                                android:padding="4dp"
-                                android:text="Job"
-                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                                android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                            <TextView
-                                android:id="@+id/tv_date"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="?attr/colorPrimary"
-                                android:padding="4dp"
-                                android:text="Doctor"
-                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                                android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/tv_service"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:background="?attr/colorPrimary"
-                                android:padding="4dp"
-                                android:text="From"
-                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                                android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                            <TextView
-                                android:id="@+id/tv_date"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="?attr/colorPrimary"
-                                android:padding="4dp"
-                                android:text="@string/appointment_date"
-                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                                android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                            <TextView
-                                android:id="@+id/tv_time"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="?attr/colorPrimary"
-                                android:padding="4dp"
-                                android:text="@string/appointment_time"
-                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                                android:textColor="?android:attr/textColorPrimaryInverse"/>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:id="@+id/tv_service"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:background="?attr/colorPrimary"
-                                android:padding="4dp"
-                                android:text="To"
-                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                                android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                            <TextView
-                                android:id="@+id/tv_date"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="?attr/colorPrimary"
-                                android:padding="4dp"
-                                android:text="Unspecified"
-                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                                android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                            <TextView
-                                android:id="@+id/tv_time"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="?attr/colorPrimary"
-                                android:padding="4dp"
-                                android:text="Unspecified"
-                                android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                                android:textColor="?android:attr/textColorPrimaryInverse"/>
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <Switch
-                        android:id="@+id/switch1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"

@@ -19,7 +19,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/match_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="You've Been Matched With:"
@@ -46,7 +45,7 @@
                     android:layout_width="0dp"
                     android:layout_height="32dp"
                     android:layout_marginStart="16dp"
-                    android:text="@string/first_name_match"
+                    android:text="Dr. Kit"
                     android:textAppearance="@android:style/TextAppearance.Material.Large"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/profile_pic"
@@ -57,7 +56,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="@string/last_name_match"
+                    android:text="Himler "
                     android:textAppearance="@android:style/TextAppearance.Material.Large"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
@@ -82,14 +81,13 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="BIO: I'm just your friendly neighboorhood doctor."
+                    android:text="BIO: I am a doctor who has been practicing general medicine for 20 years. I am originally from Fountain Valley, but I moved to Garden Grove about 8 years ago after leaving Fountain Valley Hospital to be closer to my family."
                     app:layout_constraintEnd_toEndOf="@+id/tv_profile_group_name"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/profile_pic"/>
             </android.support.constraint.ConstraintLayout>
 
             <LinearLayout
-                android:id="@+id/services_section"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -97,7 +95,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/services_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
@@ -107,19 +104,17 @@
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                 <LinearLayout
-                    android:id="@+id/services_content"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="4dp"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/service_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
                         android:padding="4dp"
-                        android:text="Physician"
+                        android:text="General Doctor"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
@@ -128,7 +123,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/creds_section"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -136,7 +130,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/creds_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
@@ -146,19 +139,17 @@
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                 <LinearLayout
-                    android:id="@+id/creds_content"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="4dp"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/creds_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
                         android:padding="4dp"
-                        android:text="Medical Degree"
+                        android:text="UCLA School of Medicine, obtained MD"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
@@ -167,7 +158,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/time_section"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
@@ -175,7 +165,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/time_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
@@ -185,14 +174,12 @@
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                 <LinearLayout
-                    android:id="@+id/date_label"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="4dp"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/date_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
@@ -203,7 +190,6 @@
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <TextView
-                        android:id="@+id/tv_date"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -215,14 +201,12 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/time_label"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="4dp"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/time_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
@@ -233,7 +217,6 @@
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <TextView
-                        android:id="@+id/tv_time"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -255,7 +238,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/loc_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
@@ -264,60 +246,39 @@
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
 
-                <android.support.constraint.ConstraintLayout
+                <LinearLayout
                     android:id="@+id/loc_content"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
 
-                    <LinearLayout
+                    <TextView
                         android:id="@+id/loc_text_content"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:orientation="vertical"
-                        app:layout_constraintEnd_toStartOf="@+id/i_btn_external_map"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <TextView
-                            android:id="@+id/street_adress"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="?attr/colorPrimary"
-                            android:padding="4dp"
-                            android:text="9401 WESTMINSTER AVE"
-                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                            android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                        <TextView
-                            android:id="@+id/city_adress"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:background="?attr/colorPrimary"
-                            android:padding="4dp"
-                            android:text="GARDEN GROVE CA 92844-2901"
-                            android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                            android:textColor="?android:attr/textColorPrimaryInverse"/>
-
-                    </LinearLayout>
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="9401 Westminster Ave Garden Grove, CA"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <ImageButton
                         android:id="@+id/i_btn_external_map"
-                        android:layout_width="56dp"
-                        android:layout_height="0dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:layout_weight="0"
                         android:background="?attr/colorAccent"
-                        app:layout_constraintBottom_toBottomOf="@+id/loc_text_content"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/loc_text_content"
-                        app:srcCompat="@android:drawable/ic_dialog_map"/>
-                </android.support.constraint.ConstraintLayout>
+                        app:srcCompat="@android:drawable/ic_dialog_map"
+                        tools:layout_editor_absoluteY="4dp"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/reviews_received_section"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
@@ -325,7 +286,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/reviews_received_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
@@ -335,14 +295,12 @@
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                 <LinearLayout
-                    android:id="@+id/reviews_received_content"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="4dp"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tv_review_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
@@ -352,7 +310,6 @@
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <TextView
-                        android:id="@+id/tv_review_3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
