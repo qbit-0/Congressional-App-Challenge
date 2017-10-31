@@ -71,6 +71,8 @@
                     android:layout_height="55dp"
                     android:layout_marginStart="52dp"
                     android:layout_marginTop="48dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
                     android:rating="4"
                     android:scaleX=".5"
                     android:scaleY=".5"
@@ -100,7 +102,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Services Provided"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -108,14 +110,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Doctor"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -123,9 +125,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Mechanic"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -133,9 +135,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Barber"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -154,7 +156,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Credentials / Background"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -162,14 +164,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Medical Degree"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -177,9 +179,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Doctorate in Engineering Mechanics"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -187,9 +189,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="First Place Professional Hairdressing Conest Winner"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -209,7 +211,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Location"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -218,7 +220,7 @@
                     android:id="@+id/loc_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -227,7 +229,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="13892 Yockey St Garden Grove, CA"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -240,7 +242,7 @@
                         android:background="?attr/colorAccent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@android:drawable/ic_dialog_map"
-                        tools:layout_editor_absoluteY="4dp"/>
+                        tools:layout_editor_absoluteY="8dp"/>
 
                 </LinearLayout>
 
@@ -257,7 +259,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Reviews Received"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -265,14 +267,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Great doctor, terrible barber. (5/5)"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -280,9 +282,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Great mechanic, ok hair cut. (4/5)"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -290,9 +292,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Pretty ok haircut, I'll come again. (4/5)"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -312,7 +314,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Reviews Given"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -320,7 +322,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -333,7 +335,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
                             android:background="@android:color/holo_blue_dark"
-                            android:padding="4dp"
+                            android:padding="8dp"
                             android:text="Ken O’hara (Barber)"
                             android:textAppearance="@android:style/TextAppearance.Material.Body1"
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -343,7 +345,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="?attr/colorPrimary"
-                            android:padding="4dp"
+                            android:padding="8dp"
                             android:text="I don’t cut my own hair, this guy is the second best barber in Garden Grove. (5/5) "
                             android:textAppearance="@android:style/TextAppearance.Material.Body1"
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -353,7 +355,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -361,7 +363,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
                             android:background="@android:color/holo_blue_dark"
-                            android:padding="4dp"
+                            android:padding="8dp"
                             android:text="Johnny Thai (Home Renovator)"
                             android:textAppearance="@android:style/TextAppearance.Material.Body1"
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -371,7 +373,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="?attr/colorPrimary"
-                            android:padding="4dp"
+                            android:padding="8dp"
                             android:text="Did a great job fixing up my kitchen! Looks good as new! Just wished his pricing wasn’t so high (4/5)"
                             android:textAppearance="@android:style/TextAppearance.Material.Body1"
                             android:textColor="?android:attr/textColorPrimaryInverse"/>

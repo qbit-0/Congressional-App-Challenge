@@ -98,7 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Services Requested"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -106,14 +106,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="@string/chosen_service_match"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -133,7 +133,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Credentials / Background"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -141,14 +141,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="UCLA School of Medicine, obtained MD"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -168,7 +168,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Date and Time"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -176,7 +176,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -184,7 +184,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Date"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -194,7 +194,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="@string/appointment_date"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -203,7 +203,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -211,7 +211,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Time"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -221,7 +221,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="@string/appointment_time"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -241,7 +241,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Location"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -250,7 +250,7 @@
                     android:id="@+id/loc_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -259,7 +259,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="9401 Westminster Ave Garden Grove, CA"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -272,7 +272,7 @@
                         android:background="?attr/colorAccent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@android:drawable/ic_dialog_map"
-                        tools:layout_editor_absoluteY="4dp"/>
+                        tools:layout_editor_absoluteY="8dp"/>
 
                 </LinearLayout>
 
@@ -289,7 +289,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Reviews Received"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -297,14 +297,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Helped me with my leg (5/5)"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -312,9 +312,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Very cool dude, great service (4/5)"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>

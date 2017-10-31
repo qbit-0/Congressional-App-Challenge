@@ -78,7 +78,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Services Requested"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -86,41 +86,41 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="vertical">
 
                     <Switch
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="@string/chosen_service_match"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <Switch
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Therapist"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <Switch
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Dietitian"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <Switch
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Pediatrician "
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
@@ -139,7 +139,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Description"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -147,7 +147,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -155,7 +155,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Description (Optional)"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -167,7 +167,7 @@
                         android:ems="10"
                         android:hint="Description"
                         android:inputType="text"
-                        android:padding="4dp"/>
+                        android:padding="8dp"/>
 
                 </LinearLayout>
 
@@ -184,7 +184,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Chose a Time"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -192,7 +192,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -200,7 +200,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="From"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -212,7 +212,7 @@
                         android:ems="10"
                         android:hint="Date"
                         android:inputType="date"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="@string/current_date"/>
 
                     <EditText
@@ -222,7 +222,7 @@
                         android:ems="10"
                         android:hint="Time"
                         android:inputType="time"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="@string/current_time"/>
                 </LinearLayout>
 
@@ -236,7 +236,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="To (Optional)"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -248,7 +248,7 @@
                         android:ems="10"
                         android:hint="Date"
                         android:inputType="date"
-                        android:padding="4dp"/>
+                        android:padding="8dp"/>
 
                     <EditText
                         android:layout_width="wrap_content"
@@ -257,7 +257,7 @@
                         android:ems="10"
                         android:hint="Time"
                         android:inputType="time"
-                        android:padding="4dp"/>
+                        android:padding="8dp"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -274,7 +274,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Location"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -292,7 +292,7 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="text"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="@string/user_adress"/>
 
                     <ImageButton
@@ -317,7 +317,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Proximity (Optional)"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -329,7 +329,7 @@
                         android:ems="10"
                         android:hint="Miles"
                         android:inputType="number"
-                        android:padding="4dp"/>
+                        android:padding="8dp"/>
 
                 </LinearLayout>
 
@@ -341,7 +341,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="?attr/colorAccent"
-                android:padding="4dp"
+                android:padding="8dp"
                 android:text="Request Service"
                 android:textColor="?android:attr/textColorPrimaryInverse"/>
 
@@ -356,7 +356,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Members (121)"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -364,10 +364,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:background="?attr/colorPrimary"
                     android:orientation="horizontal"
-                    android:padding="4dp">
+                    android:padding="8dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -404,10 +404,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:background="?attr/colorPrimary"
                     android:orientation="horizontal"
-                    android:padding="4dp">
+                    android:padding="8dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -444,10 +444,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:background="?attr/colorPrimary"
                     android:orientation="horizontal"
-                    android:padding="4dp">
+                    android:padding="8dp">
 
                     <ImageView
                         android:layout_width="wrap_content"

@@ -70,12 +70,15 @@
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                         <RatingBar
+                            style="@android:style/Widget.Material.RatingBar"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:foregroundTint="?attr/colorAccent"
+                            android:isIndicator="false"
                             android:numStars="5"
                             android:progressBackgroundTint="@android:color/darker_gray"
-                            android:rating="3"/>
+                            android:rating="4"/>
 
                     </LinearLayout>
 
@@ -99,7 +102,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="?android:attr/actionModeSplitBackground"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="invisible">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -116,7 +120,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="4dp"
                     android:orientation="vertical"
-                    android:visibility="invisible">
+                    android:visibility="visible">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -161,7 +165,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <TextView
@@ -176,7 +180,7 @@
 
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="?attr/colorPrimary"
                             android:padding="4dp"
@@ -186,7 +190,7 @@
 
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="?attr/colorPrimary"
                             android:padding="4dp"

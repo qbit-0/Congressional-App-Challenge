@@ -30,7 +30,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Requests From Group"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -39,7 +39,7 @@
                     android:id="@+id/services_content"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="vertical"
                     >
 
@@ -47,7 +47,7 @@
                         android:id="@+id/appointment_content"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:orientation="vertical"
                         android:visibility="visible">
 
@@ -55,7 +55,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="?attr/colorPrimary"
-                            android:padding="4dp"
+                            android:padding="8dp"
                             android:text="Doctors of Garden Grove"
                             android:textAppearance="@android:style/TextAppearance.Material.Body1"
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -66,7 +66,7 @@
                             android:layout_marginTop="0dp"
                             android:background="?attr/colorPrimary"
                             android:orientation="horizontal"
-                            android:padding="4dp">
+                            android:padding="8dp">
 
                             <ImageView
                                 android:layout_width="48dp"
@@ -102,7 +102,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="Location"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -112,7 +112,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="11160 Warner Ave # 201, Fountain Valley, CA 92708"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -129,7 +129,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="Service"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -139,7 +139,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="General Doctor"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -156,7 +156,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="Desc"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -166,7 +166,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="I got a bad cough."
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -183,7 +183,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="From"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -193,7 +193,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="@string/appointment_date"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -203,7 +203,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="@string/appointment_time"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -219,7 +219,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="To"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -229,7 +229,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="Unspecified"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -239,7 +239,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="Unspecified"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -260,9 +260,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="Mechanics United (Garden Grove)"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -270,9 +270,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:background="?attr/colorPrimary"
-                        android:padding="4dp"
+                        android:padding="8dp"
                         android:text="QuickCuts"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -291,7 +291,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
-                    android:padding="4dp"
+                    android:padding="8dp"
                     android:text="Direct Request"
                     android:textAppearance="@android:style/TextAppearance.Material.Title"
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -299,14 +299,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="vertical"
                     >
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:orientation="vertical"
                         android:visibility="visible">
 
@@ -316,7 +316,7 @@
                             android:layout_marginTop="0dp"
                             android:background="?attr/colorPrimary"
                             android:orientation="horizontal"
-                            android:padding="4dp">
+                            android:padding="8dp">
 
                             <ImageView
                                 android:id="@+id/imageView"
@@ -353,7 +353,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="Location"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -363,7 +363,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="9750 Chapman Ave, Garden Grove, CA 92841"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -380,7 +380,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="Service"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -390,7 +390,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="Barber"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -407,7 +407,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="Desc"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -417,7 +417,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="Combover with #1 sides and a fade."
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -434,7 +434,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="From"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -444,7 +444,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="@string/appointment_date"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -454,7 +454,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="@string/appointment_time"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -470,7 +470,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="To"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -480,7 +480,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="Unspecified"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
@@ -490,7 +490,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="?attr/colorPrimary"
-                                android:padding="4dp"
+                                android:padding="8dp"
                                 android:text="Unspecified"
                                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
