@@ -114,7 +114,7 @@
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
                         android:padding="4dp"
-                        android:text="General Doctor"
+                        android:text="@string/chosen_service_match"
                         android:textAppearance="@android:style/TextAppearance.Material.Body1"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 

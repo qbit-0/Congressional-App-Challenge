@@ -19,7 +19,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/match_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Welcome To ServiceNet"
@@ -27,7 +26,6 @@
                 android:textAppearance="@android:style/TextAppearance.Material.Display1"/>
 
             <LinearLayout
-                android:id="@+id/favorites_section"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -35,7 +33,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/favorites_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
@@ -45,7 +42,6 @@
                     android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                 <LinearLayout
-                    android:id="@+id/favorites_content"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="4dp"
@@ -54,7 +50,6 @@
                     android:padding="4dp">
 
                     <ImageView
-                        android:id="@+id/favorites_image"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -67,7 +62,6 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/favorites_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -76,7 +70,6 @@
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                         <RatingBar
-                            android:id="@+id/favorites_rating"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -89,7 +82,6 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tv_favorites_service"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -110,7 +102,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/creds_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="?attr/colorAccent"
@@ -125,7 +116,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="4dp"
                     android:orientation="vertical"
-                    android:visibility="invisible">
+                    android:visibility="visible">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -149,7 +140,6 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/name_1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -158,13 +148,12 @@
                                 android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                             <RatingBar
-                                android:id="@+id/ratingBar2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:numStars="5"
                                 android:progressBackgroundTint="@android:color/darker_gray"
-                                android:rating="3"/>
+                                android:rating="5"/>
 
                         </LinearLayout>
 
@@ -176,18 +165,16 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/tv_service"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="?attr/colorPrimary"
                             android:padding="4dp"
-                            android:text="Physician "
+                            android:text="@string/chosen_service_match"
                             android:textAppearance="@android:style/TextAppearance.Material.Body1"
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                         <TextView
-                            android:id="@+id/tv_date"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -198,7 +185,6 @@
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                         <TextView
-                            android:id="@+id/tv_time"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
