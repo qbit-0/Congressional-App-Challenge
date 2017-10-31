@@ -64,6 +64,234 @@
                 android:visibility="invisible">
 
                 <android.support.constraint.ConstraintLayout
+                    android:id="@+id/search_result_unclickable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:background="?attr/colorPrimary">
+
+                    <ImageView
+                        android:id="@+id/iv_group_profile_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/ic_launcher_round"/>
+
+                    <TextView
+                        android:id="@+id/tv_group_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Doctors of Anaheim"
+                        android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_1"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_member_count_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="120 Members"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_1"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_group_name_1"/>
+
+                    <TextView
+                        android:id="@+id/tv_group_description_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Doctors of Garden Grove is an apointment-based health organization."
+                        android:textAlignment="textStart"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_member_count_1"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/search_result_unclickable_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:background="?attr/colorPrimary">
+
+                    <ImageView
+                        android:id="@+id/iv_group_profile_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/ic_launcher_round"/>
+
+                    <TextView
+                        android:id="@+id/tv_group_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Doctors of Woodland Hills"
+                        android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_2"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_member_count_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="120 Members"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_2"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_group_name_2"/>
+
+                    <TextView
+                        android:id="@+id/tv_group_description_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Doctors of Garden Grove is an apointment-based health organization."
+                        android:textAlignment="textStart"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_member_count_2"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/search_result_unclickable_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:background="?attr/colorPrimary">
+
+                    <ImageView
+                        android:id="@+id/iv_group_profile_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/ic_launcher_round"/>
+
+                    <TextView
+                        android:id="@+id/tv_group_name_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Doctors of Los Angeles"
+                        android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_3"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_member_count_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="120 Members"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_3"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_group_name_3"/>
+
+                    <TextView
+                        android:id="@+id/tv_group_description_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Doctors of Garden Grove is an apointment-based health organization."
+                        android:textAlignment="textStart"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_member_count_3"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/search_result_unclickable_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:background="?attr/colorPrimary">
+
+                    <ImageView
+                        android:id="@+id/iv_group_profile_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/ic_launcher_round"/>
+
+                    <TextView
+                        android:id="@+id/tv_group_name_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Doctors of Fountain Valley"
+                        android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_4"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_member_count_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="120 Members"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_4"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_group_name_4"/>
+
+                    <TextView
+                        android:id="@+id/tv_group_description_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Doctors of Garden Grove is an apointment-based health organization."
+                        android:textAlignment="textStart"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_member_count_4"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
                     android:id="@+id/search_result_clickable"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -121,14 +349,14 @@
                 </android.support.constraint.ConstraintLayout>
 
                 <android.support.constraint.ConstraintLayout
-                    android:id="@+id/search_result_unclickable"
+                    android:id="@+id/search_result_unclickable_5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="16dp"
                     android:background="?attr/colorPrimary">
 
                     <ImageView
-                        android:id="@+id/iv_group_profile_1"
+                        android:id="@+id/iv_group_profile_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
@@ -138,29 +366,29 @@
                         app:srcCompat="@mipmap/ic_launcher_round"/>
 
                     <TextView
-                        android:id="@+id/tv_group_name_1"
+                        android:id="@+id/tv_group_name_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
-                        android:text="Doctors of Garden Grove"
+                        android:text="Doctors of Westminster"
                         android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
                         android:textColor="?android:attr/textColorTertiaryInverse"
-                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_1"
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_5"
                         app:layout_constraintTop_toTopOf="parent"/>
 
                     <TextView
-                        android:id="@+id/tv_member_count_1"
+                        android:id="@+id/tv_member_count_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:text="120 Members"
                         android:textColor="?android:attr/textColorTertiaryInverse"
-                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_1"
-                        app:layout_constraintTop_toBottomOf="@+id/tv_group_name_1"/>
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_5"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_group_name_5"/>
 
                     <TextView
-                        android:id="@+id/tv_group_description_1"
+                        android:id="@+id/tv_group_description_5"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="16dp"
@@ -173,7 +401,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tv_member_count_1"/>
+                        app:layout_constraintTop_toBottomOf="@+id/tv_member_count_5"/>
 
                 </android.support.constraint.ConstraintLayout>
 

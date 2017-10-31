@@ -20,7 +20,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_provider_search"
+            android:label="@string/title_activity_group_search"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".ProviderProfileActivity">

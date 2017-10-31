@@ -62,7 +62,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="GROUP: Doctors of Garden Grove is an apointment-based health organization."
+                    android:text="GROUP: Doctors of Garden Grove is an appointment-based health organization based in Garden Grove."
                     app:layout_constraintEnd_toEndOf="@+id/tv_profile_group_name"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/profile_pic"/>
@@ -71,7 +71,7 @@
             <LinearLayout
                 android:id="@+id/services_section"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
                 android:background="?android:attr/actionModeSplitBackground"
                 android:orientation="vertical">
@@ -99,7 +99,7 @@
                         android:layout_height="wrap_content"
                         android:background="?attr/colorPrimary"
                         android:padding="4dp"
-                        android:text="Physician"
+                        android:text="General Doctor"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                     <Switch
@@ -121,6 +121,66 @@
                         android:padding="4dp"
                         android:text="Dietitian"
                         android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                    <Switch
+                        android:id="@+id/service_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="Pediatrician "
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/desc_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?android:attr/actionModeSplitBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/desc_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorAccent"
+                    android:padding="4dp"
+                    android:text="Description"
+                    android:textAppearance="@android:style/TextAppearance.Material.Title"
+                    android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                <LinearLayout
+                    android:id="@+id/desc_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_desc_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?attr/colorPrimary"
+                        android:padding="4dp"
+                        android:text="Description (Optional)"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="?android:attr/textColorPrimaryInverse"/>
+
+                    <EditText
+                        android:id="@+id/et_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Description"
+                        android:inputType="text"
+                        android:padding="4dp"/>
 
                 </LinearLayout>
 
@@ -264,7 +324,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
-                            android:inputType="date"
+                            android:inputType="text"
                             android:padding="4dp"
                             android:text="@string/address_street"/>
 
@@ -274,7 +334,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
-                            android:inputType="date"
+                            android:inputType="text"
                             android:padding="4dp"
                             android:text="@string/address_city"/>
 
@@ -382,7 +442,7 @@
                             android:textColor="?android:attr/textColorPrimaryInverse"/>
 
                         <RatingBar
-                            android:id="@+id/ratingBar2"
+                            android:id="@+id/rating_bar_2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
