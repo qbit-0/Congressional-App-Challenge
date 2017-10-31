@@ -364,6 +364,60 @@
 
                 </android.support.constraint.ConstraintLayout>
 
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:background="?attr/colorPrimary"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/iv_group_profile_6"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/ic_profile_4"/>
+
+                    <TextView
+                        android:id="@+id/tv_group_name_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Jason Todd (Direct Request)"
+                        android:textAppearance="@android:style/TextAppearance.Material.SearchResult.Title"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/iv_group_profile_6"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingBar2"
+                        style="@style/Widget.AppCompat.RatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="24dp"
+                        android:rating="3"
+                        android:scaleX=".5"
+                        android:scaleY=".5"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_group_name_6"/>
+
+                    <TextView
+                        android:id="@+id/tv_group_description_6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Hi, my name is Dr. Jason Todd. I'm originally from New York and I studied medicine from New York University. However, I had some family members out here and decided to move right after graduation. I have been practicing medicine for only four years, but I can assure you that I am higly qualified because I graduated at the top of my class."
+                        android:textAlignment="textStart"
+                        android:textColor="?android:attr/textColorTertiaryInverse"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ratingBar2"/>
+
+                </android.support.constraint.ConstraintLayout>
+
             </LinearLayout>
 
             <ProgressBar
