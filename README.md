@@ -4,4 +4,4 @@ Description: ServiceSearch is an app created for the Congressional App Challenge
 
 Authors: Duy Pham, Danny Vo, David Chuong
 
-<a href="https://www.freevector.com/icons-for-the-network-20626">FreeVector.com</a>
+https://www.freevector.com/icons-for-the-network-20626"
